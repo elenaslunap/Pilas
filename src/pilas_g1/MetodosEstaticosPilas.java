@@ -64,29 +64,16 @@ public class MetodosEstaticosPilas <T>{
         
     }
     
-    public static <T> boolean quitaElementos(PilaADT<T> pila, int n){
-        boolean resp;
-        ArrayList<T> aux = new ArrayList<T>();
+    public static <T> void quitaElementos(PilaADT<T> pila, int n){
         int i, j, k;
-        resp = true;
-        i = 0;
-        while (!pila.isEmpty()){
-            aux.add(pila.pop());
-            i++;
-        }
-        
-        for ( j = aux.size()-1; j >= 0; j-- ){
-            pila.push(aux.get(j));
-        }
-        
-        if (n > aux.size())
-            resp = false;
-        else
-            for (k = 0; k<n; k++){
-                pila.pop();
-                resp = true;
-            }
-        return resp;
+        int tam;
+      
+        tam = indicaNumElem(pila);
+        if ( n < tam)
+            for (k = 0; k<n; k++)
+                pila.pop(); 
+            
+     
     }
     
     public static void main(String[] args) {

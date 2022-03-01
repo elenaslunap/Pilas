@@ -75,25 +75,10 @@ public class PilaArreglo <T> implements PilaADT<T> {
     
     @Override
     public void multiPop(int n){
-      
-        ArrayList<T> aux = new ArrayList<T>();
-        int i, j, k;
-       
-        i = 0;
-        while (!isEmpty()){
-            aux.add(pop());
-            i++;
-        }
-        
-        for ( j = aux.size()-1; j >= 0; j-- ){
-            push(aux.get(j));
-        }
-       
-        if ( n < aux.size())
-            for (k = 0; k<n; k++){
-                pop();
-               
-            }
+        int i;
+        if ( n <= tope)
+            for (i = 0; i<= n; i++)
+                pop();    
     }
     
     

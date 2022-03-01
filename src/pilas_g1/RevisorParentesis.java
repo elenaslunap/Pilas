@@ -107,8 +107,30 @@ public class RevisorParentesis {
             balance = false;
         return balance;
        
+    }
+    
+    public boolean checaBalance(PilaArreglo pila){
+        boolean resp;
+        int i = 0;
+        resp = true;
         
-        
+        while (i < cadena.length() && resp){
+            if (cadena.charAt(i) == '(')
+                pila.push('(');
+            else if (cadena.charAt(i) == '[')
+                pila.push('[');
+            else if (cadena.charAt(i) == '{')
+                pila.push('{');
+            else if (cadena.charAt(i) == ')'){
+             
+                
+                    
+                    
+                
+            }
+            i++;
+        }
+        return true;
     }
     
     
