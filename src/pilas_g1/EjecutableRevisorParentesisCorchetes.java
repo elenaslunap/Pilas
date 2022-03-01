@@ -16,10 +16,6 @@ public class EjecutableRevisorParentesisCorchetes {
         String cadena = "[{(3+3)}*2/5]+1";
         RevisorParentesis miRevisor = new RevisorParentesis(cadena);
         boolean resp;
-        resp = miRevisor.evaluaParentesis2(parentesis);
-        if (resp)
-            System.out.println("Los parentesis están balanceados");
-        else
-            System.out.println("Los parentesis no están balanceados");
+        
     }
 }
