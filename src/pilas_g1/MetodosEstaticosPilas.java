@@ -72,6 +72,15 @@ public class MetodosEstaticosPilas <T>{
         if ( n < tam)
             for (k = 0; k<n; k++)
                 pila.pop(); 
+        
+        
+//      i = 0; aux;
+//      while (!pila.isEmpty() && i < n){   
+//          aux.push(pila.pop());
+//          i++;
+//      }
+//      if ( i < n ) // si no, regresa los elementos a la pila original
+//          copiaPila(aux, p);
             
      
     }
